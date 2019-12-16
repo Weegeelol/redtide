@@ -4,3 +4,5 @@ Red Tide - An HOI4 Alternate History Mod (1.8.1) https://discord.gg/hby96rN
 
 
 MAKE SURE TO FORK YOUR OWN REPOSITORY. DO NOT COMMIT TO MASTER, CREATE A PULL REQUEST.
+
+Also don't forget to update your fork (pull from the master, to your fork)!!!
