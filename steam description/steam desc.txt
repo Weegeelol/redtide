@@ -1,0 +1,35 @@
+Red Tide - An HOI4 Alternate History Mod (1.8.1) https://discord.gg/hby96rN
+
+"The year is 1936 and within the first week of this new year, news is spreading across the Soviet Union. Stalin has "disappeared" and Leon Trotsky has returned to power. Will Leon Trotsky help fuel the World Revolution? Will the United States protect the world from the spread of Communism? Will the Germans fend off the socialist reformers? And will Japan succeed in the Pacific?"
+
+
+Current Content:
+-Leon Trotsky takes leadership when Stalin "disappears"
+-German Civil War
+-Balkan Entente
+-Alliance of Free Nations
+-Socialist States of America
+-Fascist League
+-Hitler's Anti-Communist Speech
+-And much more!
+
+Planned Content:
+-Much more, expanded focus trees, interactive events, stacic events, different choices, new gfx, and whatever people suggest to me
+
+Current Playable Nations:
+-All nations are playable, but not all countries have full content yet :)
+
+FAQ:
+
+Q: So what happened to Stalin?
+A: The world may never know.
+
+Q: Is this supposed to be realistic?
+A: Not really, just a fun alternative reality :)
+
+Q: What about (fill in the blank about some historical thing)?
+A: I'd love to make the mod more plausible. If you have a suggestion feel free to tell me.
+
+
+Join the Discord to stay up to date with the mod:
+https://discord.gg/hby96rN

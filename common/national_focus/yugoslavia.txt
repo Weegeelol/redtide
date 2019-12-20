@@ -1,0 +1,1199 @@
+focus_tree = {
+	id = yugoslavia_focus
+	
+	country = {
+		factor = 10
+	modifier = {
+			add = 10
+			tag = YUG
+		}
+
+	}
+	
+	default = no
+	reset_on_civilwar = no
+continuous_focus_position = { x = 50 y = 1600 }
+	
+focus = {
+		id = YUG_foreign_policy
+		icon = GFX_goal_
+		x = 10
+		y = 0
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = YUG_support_be
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_foreign_policy }
+		mutually_exclusive = { focus = YUG_favor_new_powers focus = YUG_yug_ideals }
+		x = -8
+		y = 1
+		relative_position_id = YUG_foreign_policy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = YUG_favor_new_powers
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_foreign_policy }
+		mutually_exclusive = { focus = YUG_support_be focus = YUG_yug_ideals }
+		x = 0
+		y = 1
+		relative_position_id = YUG_foreign_policy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = YUG_yug_ideals
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_foreign_policy }
+		mutually_exclusive = { focus = YUG_foreign_policy focus = YUG_support_be }
+		x = 5
+		y = 1
+		relative_position_id = YUG_foreign_policy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+#############################
+focus = {
+		id = YUG_be_ideals
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_support_be }
+		x = 0
+		y = 1
+		relative_position_id = YUG_support_be
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = YUG_aid_military
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_be_ideals }
+		mutually_exclusive = { focus = YUG_aid_econ }
+		x = -1
+		y = 1
+		relative_position_id = YUG_be_ideals
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_aid_econ
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_be_ideals }
+		mutually_exclusive = { focus = YUG_aid_military }
+		x = 1
+		y = 1
+		relative_position_id = YUG_be_ideals
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_aid_romania
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_aid_econ focus = YUG_aid_military }
+		x = 0
+		y = 1
+		relative_position_id = YUG_aid_econ
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_aid_greece
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_aid_econ focus = YUG_aid_military }
+		x = 0
+		y = 1
+		relative_position_id = YUG_aid_military
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_aid_turkey
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_aid_romania focus = YUG_aid_greece }
+		x = -1
+		y = 1
+		relative_position_id = YUG_aid_romania
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_establish_be_security
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_aid_turkey }
+		x = 0
+		y = 1
+		relative_position_id = YUG_aid_turkey
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invade_hungary
+		icon = GFX_goal_
+		prerequisite = { focus =YUG_establish_be_security }
+		x = -2
+		y = 1
+		relative_position_id = YUG_establish_be_security
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invade_bulgaria
+		icon = GFX_goal_
+		prerequisite = { focus =YUG_establish_be_security }
+		x = 2
+		y = 1
+		relative_position_id = YUG_establish_be_security
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invade_bulgaria
+		icon = GFX_goal_
+		prerequisite = { focus =YUG_establish_be_security }
+		x = 2
+		y = 1
+		relative_position_id = YUG_establish_be_security
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_declare_be
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_establish_be_security }
+		x = 0
+		y = 1
+		relative_position_id = YUG_establish_be_security
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invite_alb
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_declare_be }
+		mutually_exclusive = { focus = YUG_protect_alb focus = YUG_invade_alb }
+		x = -2
+		y = 1
+		relative_position_id = YUG_declare_be
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_protect_alb
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_declare_be }
+		mutually_exclusive = { focus = YUG_invite_alb focus = YUG_invade_alb }
+		x = 2
+		y = 1
+		relative_position_id = YUG_declare_be
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invade_alb
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_declare_be }
+		mutually_exclusive = { focus = YUG_invite_alb focus = YUG_protect_alb }
+		x = 0
+		y = 1
+		relative_position_id = YUG_declare_be
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+########################
+focus = {
+		id = YUG_support_communists
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_favor_new_powers }
+		mutually_exclusive = { focus = YUG_support_fascists }
+		x = -3
+		y = 1
+		relative_position_id = YUG_favor_new_powers
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_support_fascists
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_favor_new_powers focus = YUG_yug_ideals }
+		mutually_exclusive = { focus = YUG_support_communists }
+		x = 2
+		y = 1
+		relative_position_id = YUG_favor_new_powers
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_approach_germany
+		icon = GFX_goal_
+		prerequisite = { focus =  YUG_support_communists }
+		mutually_exclusive = { focus = YUG_approach_soviets }
+		x = -1
+		y = 1
+		relative_position_id = YUG_support_communists
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_approach_soviets
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_support_communists }
+		mutually_exclusive = { focus = YUG_approach_germany }
+		x = 1
+		y = 1
+		relative_position_id = YUG_support_communists
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_establish_workers_party
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_approach_soviets }
+		x = 0
+		y = 1
+		relative_position_id = YUG_approach_soviets
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_join_comintern
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_establish_workers_party }
+		x = 0
+		y = 1
+		relative_position_id = YUG_establish_workers_party
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invite_trotsky
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_join_comintern }
+		x = 0
+		y = 1
+		relative_position_id = YUG_join_comintern
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_invite_tito
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_approach_germany }
+		x = 0
+		y = 1
+		relative_position_id = YUG_approach_germany
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_intervene_civilwar
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_invite_tito }
+		x = 0
+		y = 1
+		relative_position_id = YUG_invite_tito
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_support_germany
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_intervene_civilwar }
+		x = 0
+		y = 1
+		relative_position_id = YUG_intervene_civilwar
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_spread_revolution
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_support_germany focus = YUG_invite_trotsky }
+		x = 1
+		y = 1
+		relative_position_id = YUG_support_germany
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_liberate_bulgaria
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_spread_revolution }
+		x = 0
+		y = 1
+		relative_position_id = YUG_spread_revolution
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+#################
+focus = {
+		id = YUG_go_alone
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_support_fascists }
+		prerequisite = { focus = YUG_find_emperor }
+		mutually_exclusive = { focus = YUG_go_italy focus = YUG_go_alone }
+		x = 2
+		y = 1
+		relative_position_id = YUG_support_fascists
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_go_german
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_support_fascists }
+		mutually_exclusive = { focus = YUG_go_italy focus = YUG_go_alone }
+		x = -2
+		y = 1
+		relative_position_id = YUG_support_fascists
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_go_italy
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_support_fascists }
+		mutually_exclusive = { focus = YUG_go_italy focus = YUG_go_alone }
+		x = 0
+		y = 1
+		relative_position_id = YUG_support_fascists
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_join_axis
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_go_german }
+		mutually_exclusive = { focus = YUG_go_german }
+		x = 0
+		y = 1
+		relative_position_id = YUG_go_german
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_shared_research_ger
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_join_axis }
+		x = 0
+		y = 1
+		relative_position_id = YUG_join_axis
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_return_montangaro
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_go_italy }
+		x = 0
+		y = 1
+		relative_position_id = YUG_go_italy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_return_macedonia
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_return_montangaro }
+		x = 0
+		y = 1
+		relative_position_id = YUG_return_montangaro
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_return_vonjovado
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_return_macedonia }
+		x = 0
+		y = 1
+		relative_position_id = YUG_return_macedonia
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_become_balktanica_serbia
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_return_vonjovado }
+		x = 0
+		y = 1
+		relative_position_id = YUG_return_vonjovado
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_serbian_steelmills
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_become_balktanica_serbia }
+		x = 0
+		y = 1
+		relative_position_id = YUG_become_balktanica_serbia
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_find_emperor
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_yug_ideals }
+		x = 0
+		y = 1
+		relative_position_id = YUG_yug_ideals
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_form_roman
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_go_alone }
+		x = 0
+		y = 1
+		relative_position_id = YUG_go_alone
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_our_claims
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_form_roman }
+		x = 0
+		y = 1
+		relative_position_id = YUG_form_roman
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_retake_rome
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_our_claims }
+		x = 0
+		y = 1
+		relative_position_id = YUG_our_claims
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+######################
+focus = {
+		id = YUG_modernize_airforce
+		icon = GFX_goal_
+		x = 20
+		y = 0
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_build_airforce
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_modernize_airforce }
+		mutually_exclusive = { focus = YUG_scrap_airforce }
+		x = -1
+		y = 1
+		relative_position_id = YUG_modernize_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_scrap_airforce
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_modernize_airforce }
+		mutually_exclusive = { focus = YUG_build_airforce }
+		x = 1
+		y = 1
+		relative_position_id = YUG_modernize_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_italian_aircraft
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_airforce focus = YUG_scrap_airforce }
+		x = -1
+		y = 1
+		relative_position_id = YUG_build_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_balkan_airforce
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_airforce focus = YUG_scrap_airforce }
+		x = 1
+		y = 1
+		relative_position_id = YUG_build_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_german_airforce
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_airforce focus = YUG_scrap_airforce }
+		x = 3
+		y = 1
+		relative_position_id = YUG_build_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_bomber_effort
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_german_airforce focus = YUG_italian_aircraft focus = YUG_balkan_airforce }
+		x = 1
+		y = 1
+		relative_position_id = YUG_balkan_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_fighter_effort
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_german_airforce focus = YUG_italian_aircraft focus = YUG_balkan_airforce }
+		x = -1
+		y = 1
+		relative_position_id = YUG_balkan_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+######################
+focus = {
+		id = YUG_modernize_army
+		icon = GFX_goal_
+		x = 29
+		y = 0
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_build_army
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_modernize_army }
+		mutually_exclusive = { focus = YUG_scrap_army }
+		x = -1
+		y = 1
+		relative_position_id = YUG_modernize_army
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_scrap_army
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_modernize_army }
+		mutually_exclusive = { focus = YUG_build_army }
+		x = 1
+		y = 1
+		relative_position_id = YUG_modernize_army
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_italian_tanks
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_army focus = YUG_scrap_army }
+		x = -1
+		y = 1
+		relative_position_id = YUG_build_army
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_balkan_soldiers
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_army focus = YUG_scrap_army }
+		x = 1
+		y = 1
+		relative_position_id = YUG_build_army
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_german_tanks
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_army focus = YUG_scrap_army }
+		x = 3
+		y = 1
+		relative_position_id = YUG_build_army
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_doctrine_focus
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_german_tanks focus = YUG_italian_tanks focus = YUG_balkan_soldiers }
+		x = 1
+		y = 1
+		relative_position_id = YUG_balkan_soldiers
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_military_training
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_german_tanks focus = YUG_italian_tanks focus = YUG_balkan_soldiers }
+		x = -1
+		y = 1
+		relative_position_id = YUG_balkan_soldiers
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+##############################
+focus = {
+		id = YUG_modernize_navy
+		icon = GFX_goal_
+		x = 2
+		y = 1
+		relative_position_id = YUG_german_airforce
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_build_navy
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_modernize_navy }
+		mutually_exclusive = { focus = YUG_scrap_navy }
+		x = -1
+		y = 1
+		relative_position_id = YUG_modernize_navy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_scrap_navy
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_modernize_navy }
+		mutually_exclusive = { focus = YUG_build_navy }
+		x = 1
+		y = 1
+		relative_position_id = YUG_modernize_navy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_italian_boats
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_navy focus = YUG_scrap_navy }
+		x = -1
+		y = 1
+		relative_position_id = YUG_build_navy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_balkan_boats
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_navy focus = YUG_scrap_navy }
+		x = 1
+		y = 1
+		relative_position_id = YUG_build_navy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_german_boats
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_build_navy focus = YUG_scrap_navy }
+		x = 3
+		y = 1
+		relative_position_id = YUG_build_navy
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_doctrine_focus_navy
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_german_boats focus = YUG_italian_boats focus = YUG_balkan_boats }
+		x = 1
+		y = 1
+		relative_position_id = YUG_balkan_boats
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_navy_training
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_german_boats focus = YUG_italian_boats focus = YUG_balkan_boats }
+		x = -1
+		y = 1
+		relative_position_id = YUG_balkan_boats
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+#############################

@@ -1,0 +1,41 @@
+################
+#### SOVIET ####
+################
+
+SOV_industry_relocation = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_great_patriotic_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}
+
+SOV_de_stalin_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		NOT = { has_country_leader = {
+    name = "Joseph Stalin"
+    ruling_only = yes
+}	
+}
+}		
+}
