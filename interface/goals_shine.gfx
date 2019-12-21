@@ -9543,7 +9543,7 @@ spriteTypes = {
 	}
 SpriteType = {
 		name = "gfx_goal_china_wargoal"
-		texturefile = "gfx/interface/goals/goal_china_wargoal.dds"
+		texturefile = "gfx/interface/goals/gfx_goal_china_wargoal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 		
@@ -9556,7 +9556,7 @@ SpriteType = {
 #
 SpriteType = {
 		name = "gfx_goal_china_wargoal"
-		texturefile = "gfx/interface/goals/goal_german_civilwar.dds"
+		texturefile = "gfx/interface/goals/gfx_goal_german_civilwar.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 		
@@ -9569,7 +9569,7 @@ SpriteType = {
 
 SpriteType = {
 		name = "gfx_goal_tito"
-		texturefile = "gfx/interface/goals/goal_tito.dds"
+		texturefile = "gfx/interface/goals/gfx_goal_tito.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 		
@@ -9581,7 +9581,7 @@ SpriteType = {
 	}	
 SpriteType = {
 		name = "gfx_goal_support_be"
-		texturefile = "gfx/interface/goals/goal_support_be.dds"
+		texturefile = "gfx/interface/goals/gfx_goal_support_be.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 		
@@ -9593,7 +9593,43 @@ SpriteType = {
 	}
 SpriteType = {
 		name = "gfx_goal_balkan_secruity_league"
-		texturefile = "gfx/interface/goals/goal_balkan_secruity_league.dds"
+		texturefile = "gfx/interface/goals/gfx_goal_balkan_secruity_league.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_economic_trade"
+		texturefile = "gfx/interface/goals/gfx_goal_economic_trade.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_support_greece"
+		texturefile = "gfx/interface/goals/gfx_goal_support_greece.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_support_romania"
+		texturefile = "gfx/interface/goals/gfx_goal_support_romania.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 		
@@ -9603,5 +9639,113 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}	
+SpriteType = {
+		name = "gfx_goal_support_turkey"
+		texturefile = "gfx/interface/goals/gfx_goal_support_turkey.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_cuban_civilwar"
+		texturefile = "gfx/interface/goals/gfx_goal_cuban_civilwar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_world_revolution"
+		texturefile = "gfx/interface/goals/gfx_goal_world_revolution.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_invade_bulgaria"
+		texturefile = "gfx/interface/goals/gfx_goal_invade_bulgaria.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_invade_hungary"
+		texturefile = "gfx/interface/goals/gfx_goal_invade_hungary.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_foreign_policy"
+		texturefile = "gfx/interface/goals/gfx_goal_foreign_policy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_alb_civilwar"
+		texturefile = "gfx/interface/goals/gfx_goal_alb_civilwar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_protect_alb"
+		texturefile = "gfx/interface/goals/gfx_goal_protect_alb.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_invite_alb"
+		texturefile = "gfx/interface/goals/gfx_goal_invite_alb.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
 #	
 }

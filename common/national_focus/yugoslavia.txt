@@ -16,23 +16,23 @@ continuous_focus_position = { x = 50 y = 1600 }
 	
 focus = {
 		id = YUG_foreign_policy
-		icon = GFX_goal_
+		icon = GFX_goal_foreign_policy
 		x = 10
 		y = 0
-		cost = 10
+		cost = 5
 available = {
 		
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_political_power = 200
 		}
 	}
 
 focus = {
 		id = YUG_support_be
-		icon = GFX_goal_
+		icon = GFX_goal_support_be
 		prerequisite = { focus = YUG_foreign_policy }
 		mutually_exclusive = { focus = YUG_favor_new_powers focus = YUG_yug_ideals }
 		x = -8
@@ -45,13 +45,18 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_opinion_modifier = { target = BUL modifier = medium_increase }
+add_opinion_modifier = { target = TUR modifier = medium_increase }
+add_opinion_modifier = { target = ALB modifier = medium_increase }
+add_opinion_modifier = { target = ROM modifier = medium_increase }
+add_opinion_modifier = { target = GRE modifier = medium_increase }
+add_opinion_modifier = { target = HUN modifier = medium_increase }
 		}
 	}
 
 focus = {
 		id = YUG_favor_new_powers
-		icon = GFX_goal_
+		icon = GFX_focus_generic_strike_at_democracy2
 		prerequisite = { focus = YUG_foreign_policy }
 		mutually_exclusive = { focus = YUG_support_be focus = YUG_yug_ideals }
 		x = 0
@@ -83,13 +88,13 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_slovene_nationalism
 		}
 	}
 #############################
 focus = {
 		id = YUG_be_ideals
-		icon = GFX_goal_
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = YUG_support_be }
 		x = 0
 		y = 1
@@ -101,13 +106,13 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_balkan_ideals
 		}
 	}
 
 focus = {
 		id = YUG_aid_military
-		icon = GFX_goal_
+		icon = GFX_goal_military_trade
 		prerequisite = { focus = YUG_be_ideals }
 		mutually_exclusive = { focus = YUG_aid_econ }
 		x = -1
@@ -125,7 +130,7 @@ available = {
 	}
 focus = {
 		id = YUG_aid_econ
-		icon = GFX_goal_
+		icon = GFX_goal_economic_trade
 		prerequisite = { focus = YUG_be_ideals }
 		mutually_exclusive = { focus = YUG_aid_military }
 		x = 1
@@ -143,7 +148,7 @@ available = {
 	}
 focus = {
 		id = YUG_aid_romania
-		icon = GFX_goal_
+		icon = GFX_goal_support_romania
 		prerequisite = { focus = YUG_aid_econ focus = YUG_aid_military }
 		x = 0
 		y = 1
@@ -160,7 +165,7 @@ available = {
 	}
 focus = {
 		id = YUG_aid_greece
-		icon = GFX_goal_
+		icon = GFX_goal_support_greece
 		prerequisite = { focus = YUG_aid_econ focus = YUG_aid_military }
 		x = 0
 		y = 1
@@ -177,7 +182,7 @@ available = {
 	}
 focus = {
 		id = YUG_aid_turkey
-		icon = GFX_goal_
+		icon = GFX_goal_support_turkey
 		prerequisite = { focus = YUG_aid_romania focus = YUG_aid_greece }
 		x = -1
 		y = 1
@@ -194,7 +199,7 @@ available = {
 	}
 focus = {
 		id = YUG_establish_be_security
-		icon = GFX_goal_
+		icon = GFX_goal_balkan_security_league
 		prerequisite = { focus = YUG_aid_turkey }
 		x = 0
 		y = 1
@@ -211,8 +216,8 @@ available = {
 	}
 focus = {
 		id = YUG_invade_hungary
-		icon = GFX_goal_
-		prerequisite = { focus =YUG_establish_be_security }
+		icon = GFX_goal_invade_hungary
+		prerequisite = { focus = YUG_establish_be_security }
 		x = -2
 		y = 1
 		relative_position_id = YUG_establish_be_security
@@ -226,26 +231,10 @@ available = {
 
 		}
 	}
-focus = {
-		id = YUG_invade_bulgaria_two
-		icon = GFX_goal_
-		prerequisite = { focus =YUG_establish_be_security }
-		x = 2
-		y = 1
-		relative_position_id = YUG_establish_be_security
-		cost = 10
-available = {
-		
-		}
-		available_if_capitulated = yes
 
-		completion_reward = {
-
-		}
-	}
 focus = {
 		id = YUG_invade_bulgaria
-		icon = GFX_goal_
+		icon = GFX_goal_invade_bulgaria
 		prerequisite = { focus =YUG_establish_be_security }
 		x = 2
 		y = 1
@@ -262,7 +251,7 @@ available = {
 	}
 focus = {
 		id = YUG_declare_be
-		icon = GFX_goal_
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = YUG_establish_be_security }
 		x = 0
 		y = 1
@@ -279,7 +268,7 @@ available = {
 	}
 focus = {
 		id = YUG_invite_alb
-		icon = GFX_goal_
+		icon = GFX_goal_invite_alb
 		prerequisite = { focus = YUG_declare_be }
 		mutually_exclusive = { focus = YUG_protect_alb focus = YUG_invade_alb }
 		x = -2
@@ -297,7 +286,7 @@ available = {
 	}
 focus = {
 		id = YUG_protect_alb
-		icon = GFX_goal_
+		icon = GFX_goal_protect_alb
 		prerequisite = { focus = YUG_declare_be }
 		mutually_exclusive = { focus = YUG_invite_alb focus = YUG_invade_alb }
 		x = 2
@@ -315,7 +304,7 @@ available = {
 	}
 focus = {
 		id = YUG_invade_alb
-		icon = GFX_goal_
+		icon = GFX_goal_alb_civilwar
 		prerequisite = { focus = YUG_declare_be }
 		mutually_exclusive = { focus = YUG_invite_alb focus = YUG_protect_alb }
 		x = 0
@@ -334,7 +323,7 @@ available = {
 ########################
 focus = {
 		id = YUG_support_communists
-		icon = GFX_goal_
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = YUG_favor_new_powers }
 		mutually_exclusive = { focus = YUG_support_fascists }
 		x = -3
@@ -352,7 +341,7 @@ available = {
 	}
 focus = {
 		id = YUG_support_fascists
-		icon = GFX_goal_
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = YUG_favor_new_powers focus = YUG_yug_ideals }
 		mutually_exclusive = { focus = YUG_support_communists }
 		x = 2
@@ -370,7 +359,7 @@ available = {
 	}
 focus = {
 		id = YUG_approach_germany
-		icon = GFX_goal_
+		icon = GFX
 		prerequisite = { focus =  YUG_support_communists }
 		mutually_exclusive = { focus = YUG_approach_soviets }
 		x = -1
@@ -406,7 +395,7 @@ available = {
 	}
 focus = {
 		id = YUG_establish_workers_party
-		icon = GFX_goal_
+		icon = GFX_goal_support_fourth_int
 		prerequisite = { focus = YUG_approach_soviets }
 		x = 0
 		y = 1
@@ -422,8 +411,8 @@ available = {
 		}
 	}
 focus = {
-		id = YUG_join_comintern
-		icon = GFX_goal_
+		id = YUG_join_comintern_yug
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = YUG_establish_workers_party }
 		x = 0
 		y = 1
@@ -441,10 +430,10 @@ available = {
 focus = {
 		id = YUG_invite_trotsky
 		icon = GFX_goal_
-		prerequisite = { focus = YUG_join_comintern }
+		prerequisite = { focus = YUG_join_comintern_yug }
 		x = 0
 		y = 1
-		relative_position_id = YUG_join_comintern
+		relative_position_id = YUG_join_comintern_yug
 		cost = 10
 available = {
 		
@@ -508,7 +497,7 @@ available = {
 	}
 focus = {
 		id = YUG_spread_revolution
-		icon = GFX_goal_
+		icon = GFX_goal_world_revolution
 		prerequisite = { focus = YUG_support_germany focus = YUG_invite_trotsky }
 		x = 1
 		y = 1
@@ -525,7 +514,7 @@ available = {
 	}
 focus = {
 		id = YUG_liberate_bulgaria
-		icon = GFX_goal_
+		icon = GFX_goal_invade_bulgaria
 		prerequisite = { focus = YUG_spread_revolution }
 		x = 0
 		y = 1
@@ -543,7 +532,7 @@ available = {
 #################
 focus = {
 		id = YUG_go_alone
-		icon = GFX_goal_
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = YUG_support_fascists }
 		prerequisite = { focus = YUG_find_emperor }
 		mutually_exclusive = { focus = YUG_go_italy focus = YUG_go_alone }
@@ -562,7 +551,7 @@ available = {
 	}
 focus = {
 		id = YUG_go_german
-		icon = GFX_goal_
+		icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = YUG_support_fascists }
 		mutually_exclusive = { focus = YUG_go_italy focus = YUG_go_alone }
 		x = -2
@@ -580,7 +569,7 @@ available = {
 	}
 focus = {
 		id = YUG_go_italy
-		icon = GFX_goal_
+		icon = GFX_focus_generic_italy_first
 		prerequisite = { focus = YUG_support_fascists }
 		mutually_exclusive = { focus = YUG_go_italy focus = YUG_go_alone }
 		x = 0
@@ -598,7 +587,7 @@ available = {
 	}
 focus = {
 		id = YUG_join_axis
-		icon = GFX_goal_
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = YUG_go_german }
 		mutually_exclusive = { focus = YUG_go_german }
 		x = 0
@@ -616,7 +605,7 @@ available = {
 	}
 focus = {
 		id = YUG_shared_research_ger
-		icon = GFX_goal_
+		icon = GFX_focus_research
 		prerequisite = { focus = YUG_join_axis }
 		x = 0
 		y = 1
@@ -701,7 +690,7 @@ available = {
 	}
 focus = {
 		id = YUG_serbian_steelmills
-		icon = GFX_goal_
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = YUG_become_balktanica_serbia }
 		x = 0
 		y = 1
@@ -752,7 +741,7 @@ available = {
 	}
 focus = {
 		id = YUG_our_claims
-		icon = GFX_goal_
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = YUG_form_roman }
 		x = 0
 		y = 1
@@ -787,7 +776,7 @@ available = {
 ######################
 focus = {
 		id = YUG_modernize_airforce
-		icon = GFX_goal_
+		icon = GFX_goal_generic_air_production
 		x = 20
 		y = 0
 		cost = 10
@@ -802,7 +791,7 @@ available = {
 	}
 focus = {
 		id = YUG_build_airforce
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = YUG_modernize_airforce }
 		mutually_exclusive = { focus = YUG_scrap_airforce }
 		x = -1
@@ -889,7 +878,7 @@ available = {
 	}
 focus = {
 		id = YUG_bomber_effort
-		icon = GFX_goal_
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = YUG_german_airforce focus = YUG_italian_aircraft focus = YUG_balkan_airforce }
 		x = 1
 		y = 1
@@ -906,7 +895,7 @@ available = {
 	}
 focus = {
 		id = YUG_fighter_effort
-		icon = GFX_goal_
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = YUG_german_airforce focus = YUG_italian_aircraft focus = YUG_balkan_airforce }
 		x = -1
 		y = 1
@@ -1038,7 +1027,13 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 focus = {
@@ -1199,7 +1194,7 @@ available = {
 #############################
 focus = {
 		id = YUG_industrialization
-		icon = GFX_goal_
+		icon = GFX_focus_generic_industry_3
 		x = 18
 		y = 5
 		cost = 10
@@ -1214,7 +1209,7 @@ available = {
 	}
 focus = {
 		id = YUG_develop_military_factories
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = YUG_industrialization }
 		x = -1
 		y = 1
@@ -1231,7 +1226,7 @@ available = {
 	}
 focus = {
 		id = YUG_develop_civ_factories
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = YUG_industrialization }
 		x = 1
 		y = 1
@@ -1450,23 +1445,7 @@ available = {
 
 		}
 	}
-focus = {
-		id = YUG_naval_infaststrucure
-		icon = GFX_goal_
-		prerequisite = { focus = YUG_new_ports }
-		x = 0
-		y = 1
-		relative_position_id = YUG_new_ports
-		cost = 10
-available = {
-		
-		}
-		available_if_capitulated = yes
 
-		completion_reward = {
-
-		}
-	}
 focus = {
 		id = YUG_more_ports
 		icon = GFX_goal_

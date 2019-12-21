@@ -1576,6 +1576,10 @@ spriteTypes = {
 		name = "GFX_focus_hol_the_foundations_of_defense"
 		texturefile = "gfx/interface/goals/focus_hol_the_foundations_of_defense.dds"
 	}
+SpriteType = { 
+		name = "GFX_focus_hol_the_foundations_of_defense"
+		texturefile = "gfx/interface/goals/focus_hol_the_foundations_of_defense.dds"
+	}
 
 	SpriteType = { 
 		name = "GFX_focus_hol_liberation"
@@ -1601,6 +1605,58 @@ SpriteType = {
 SpriteType = { 
 		name = "GFX_goal_balkan_security_league"
 		texturefile = "gfx/interface/goals/gfx_goal_balkan_security_league.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_economic_trade"
+		texturefile = "gfx/interface/goals/gfx_goal_economic_trade.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_military_trade"
+		texturefile = "gfx/interface/goals/gfx_goal_military_trade.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_support_greece"
+		texturefile = "gfx/interface/goals/gfx_goal_support_greece.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_support_romania"
+		texturefile = "gfx/interface/goals/gfx_goal_support_romania.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_support_turkey"
+		texturefile = "gfx/interface/goals/gfx_goal_support_turkey.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_cuban_civilwar"
+		texturefile = "gfx/interface/goals/gfx_goal_cuban_civilwar.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_world_revolution"
+		texturefile = "gfx/interface/goals/gfx_goal_world_revolution.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_invade_bulgaria"
+		texturefile = "gfx/interface/goals/gfx_goal_invade_bulgaria.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_invade_hungary"
+		texturefile = "gfx/interface/goals/gfx_goal_invade_hungary.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_protect_alb"
+		texturefile = "gfx/interface/goals/gfx_goal_protect_alb.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_invite_alb"
+		texturefile = "gfx/interface/goals/gfx_goal_invite_alb.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_alb_civilwar"
+		texturefile = "gfx/interface/goals/gfx_goal_alb_civilwar.dds"
+	}
+SpriteType = { 
+		name = "GFX_goal_foreign_policy"
+		texturefile = "gfx/interface/goals/gfx_goal_foreign_policy.dds"
 	}
 ################
 }
