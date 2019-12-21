@@ -457,7 +457,7 @@ available = {
 	}
 focus = {
 		id = YUG_invite_tito
-		icon = GFX_goal_
+		icon = GFX_goal_tito
 		prerequisite = { focus = YUG_approach_germany }
 		x = 0
 		y = 1
@@ -474,7 +474,7 @@ available = {
 	}
 focus = {
 		id = YUG_intervene_civilwar
-		icon = GFX_goal_
+		icon = GFX_goal_german_civilwar
 		prerequisite = { focus = YUG_invite_tito }
 		x = 0
 		y = 1
@@ -1367,7 +1367,7 @@ available = {
 	}
 focus = {
 		id = YUG_increase_infa
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus = YUG_balkan_invest }
 		x = 0
 		y = 1

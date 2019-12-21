@@ -9553,7 +9553,55 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}		
+#
+SpriteType = {
+		name = "gfx_goal_china_wargoal"
+		texturefile = "gfx/interface/goals/goal_german_civilwar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}	
 
-
+SpriteType = {
+		name = "gfx_goal_tito"
+		texturefile = "gfx/interface/goals/goal_tito.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}	
+SpriteType = {
+		name = "gfx_goal_support_be"
+		texturefile = "gfx/interface/goals/goal_support_be.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "gfx_goal_balkan_secruity_league"
+		texturefile = "gfx/interface/goals/goal_balkan_secruity_league.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		
+}
+		animation = {
+			
+		}
+		legacy_lazy_load = no
+	}	
 #	
 }
