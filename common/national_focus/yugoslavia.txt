@@ -227,7 +227,7 @@ available = {
 		}
 	}
 focus = {
-		id = YUG_invade_bulgaria
+		id = YUG_invade_bulgaria_two
 		icon = GFX_goal_
 		prerequisite = { focus =YUG_establish_be_security }
 		x = 2
@@ -1197,3 +1197,290 @@ available = {
 		}
 	}
 #############################
+focus = {
+		id = YUG_industrialization
+		icon = GFX_goal_
+		x = 18
+		y = 5
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_develop_military_factories
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_industrialization }
+		x = -1
+		y = 1
+		relative_position_id = YUG_industrialization
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_develop_civ_factories
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_industrialization }
+		x = 1
+		y = 1
+		relative_position_id = YUG_industrialization
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_new_processes
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_develop_civ_factories focus = YUG_develop_military_factories }
+		x = -1
+		y = 1
+		relative_position_id = YUG_develop_civ_factories
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_new_ports
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_processes }
+		x = -3
+		y = 1
+		relative_position_id = YUG_new_processes
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_new_mil_factories
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_processes }
+		x = -1
+		y = 1
+		relative_position_id = YUG_new_processes
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_balkan_invest
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_processes }
+		x = 1
+		y = 1
+		relative_position_id = YUG_new_processes
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_civ_factories
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_processes }
+		x = 3
+		y = 1
+		relative_position_id = YUG_new_processes
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_civ_factories_one
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_civ_factories }
+		x = 0
+		y = 1
+		relative_position_id = YUG_civ_factories
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_civ_factories_two
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_civ_factories_one }
+		x = 0
+		y = 1
+		relative_position_id = YUG_civ_factories_one
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_increase_infa
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_balkan_invest }
+		x = 0
+		y = 1
+		relative_position_id = YUG_balkan_invest
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_border_defense
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_increase_infa }
+		x = 0
+		y = 1
+		relative_position_id = YUG_increase_infa
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_new_mil_factories_one
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_mil_factories }
+		x = 0
+		y = 1
+		relative_position_id = YUG_new_mil_factories
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_new_mil_factories_two
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_mil_factories_one }
+		x = 0
+		y = 1
+		relative_position_id = YUG_new_mil_factories_one
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_naval_infaststrucure
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_ports }
+		x = 0
+		y = 1
+		relative_position_id = YUG_new_ports
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_naval_infaststrucure
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_new_ports }
+		x = 0
+		y = 1
+		relative_position_id = YUG_new_ports
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+focus = {
+		id = YUG_more_ports
+		icon = GFX_goal_
+		prerequisite = { focus = YUG_naval_infaststrucure }
+		x = 0
+		y = 1
+		relative_position_id = YUG_naval_infaststrucure
+		cost = 10
+available = {
+		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
