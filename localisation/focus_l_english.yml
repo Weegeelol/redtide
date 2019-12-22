@@ -1,7 +1,7 @@
 ﻿l_english:
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
 ####################
-#################### 
+####################
 generic_focus:0 "National Focus"
  army_effort:0 "Army Effort"
  army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
@@ -125,7 +125,7 @@ generic_focus:0 "National Focus"
  naval_air_effort:0 "Naval Air Effort"
  naval_air_effort_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air Force if we intend to wage war on a naval power."
 ######################
-##################### 
+#####################
 german_focus:0 "German National Focus"
  GER_autobahn:0 "Reichsautobahn"
  GER_autobahn_tt:0 "Add maximum §YInfrastructure§! in §YBrandenburg§!, §YHannover§!, §YThüringen§! and §YFranken§!"
@@ -149,7 +149,7 @@ german_focus:0 "German National Focus"
  GER_army_innovation_2:0 "Army Innovations II"
  GER_army_innovation_2_desc:0 "The lessons learned at our facilities in the USSR will allow us to further improve our doctrines and equipment. However, this time we will keep the advances to ourselves!"
  GER_naval_effort2:0 "Expand Dockyard Facilities"
- GER_naval_effort2_desc:0 "To truly rebuild a navy worthy of note, we must greatly expand our shipbuilding capacity." 
+ GER_naval_effort2_desc:0 "To truly rebuild a navy worthy of note, we must greatly expand our shipbuilding capacity."
  GER_rocketry_focus:0 "Rocketry"
  GER_rocketry_focus_desc:0 "Rocket propulsion holds the key to massive innovations in all three of the military branches."
  GER_wunderwaffe:0 "Wunderwaffe"
@@ -158,7 +158,7 @@ german_focus:0 "German National Focus"
  GER_mol_rib_pact_desc:0 "A treaty of friendship and non-aggression with the USSR might turn the stomach, but it will allow their precious oil to keep flowing into Germany. The secret addendum will divide the territories of Romania, Poland, Lithuania, Latvia, Estonia and Finland into German and Soviet spheres of influence..."
  GER_mol_rib_pact_tt:0 "Enter into a §Ynon-aggression pact§! with §YSoviet Union§! and agree to §Ydivide Poland§! between Soviet Union and Germany\n"
  GER_soviet_ally:0 "Alliance with the USSR"
- GER_soviet_ally_desc:0 "Perhaps it is possible to put aside our ideological differences with the Soviets and instead emphasize what unites us: hatred of selfish liberalism and the decadent West. With the USSR as an ally, we would have access to all the resources we need - in addition to their military power, of course..."
+ GER_soviet_ally_desc:0 "Perhaps it is possible to put aside our ideological differences with the Soviets and instead emphasize what unites us hatred of selfish liberalism and the decadent West. With the USSR as an ally, we would have access to all the resources we need - in addition to their military power, of course..."
  GER_turkey_puppet:0 "Puppet Turkey"
  GER_turkey_puppet_desc:0 "Turkey is caught in a vice between us and the Soviet Union. If pressured, the Turks will most likely submit to our will and become a puppet state. As part of the deal, the USSR will get some territory in eastern Turkey. However, if they reject our demands, it would mean war."
  GER_rhineland:0 "Rhineland"
@@ -678,7 +678,7 @@ SOV_iraq_civil:0 "Rally the Iraqian Communists"
  SOV_winter_war:0 "Winter War"
  SOV_winter_war_desc:0 "The Finnish pose too much of risk to us as they align with potentional future enemies..."
 SOV_de_stalin:0 "De-Stalinization"
- SOV_de_stalin_desc:0 "With Stalin gone, we should start to break down his cult of personality. It will be hard, but the citizens will soon forget him." 
+ SOV_de_stalin_desc:0 "With Stalin gone, we should start to break down his cult of personality. It will be hard, but the citizens will soon forget him."
 SOV_farm_collect:0 "Farm Collectivisation"
  SOV_farm_collect_desc:0 "To ensure our farms stay efficent we should start to reiniate collective farms. Fed workers, are happy workers."
 SOV_nep_continue:0 "Continue the N.E.P"
@@ -2105,7 +2105,7 @@ SOV_nep_continue:0 "Continue the N.E.P"
  continuous_boost_freedom_desc:0 "By reorganizing our colonial bureaucracy and recruiting native administrators, we will, in time, be able to take charge of our own affairs."
  continuous_restrict_freedom:0 "Suppress Subjects"
  continuous_restrict_freedom_desc:0 "Our colonial subjects have gotten rather silly ideas about things like "self-determination" or "national independence". It is time to disabuse them of these notions."
- unlocks_decision:0 "Unlocks Decision: "
+ unlocks_decision:0 "Unlocks Decision"
  #################################
 ##
 ##
@@ -2136,7 +2136,7 @@ USA_continue_the_new_deal:1 "Continue the New Deal"
  USA_accumulated_wealth_tax_act:1 "Accumulated Wealth Tax Act"
  USA_accumulated_wealth_tax_act_desc:1 "Some people in our country have amassed absurd amounts of capital. This money sits passively in bank accounts or invested in impractically large buildings, gildened furniture and expensive paintings. None of these serve any viable economic purpose. by instituting a new tax we will force those amongst our citizens who have amassed such useless wealth to reinvest the money into the economy."
  USA_guarantee_the_american_dream:1 "Guarantee the American Dream"
- USA_guarantee_the_american_dream_desc:0 "Most of our people don't wish for much in life: stable employment, good health, and a place to start a family. There is no reason why they shouldn't have that."
+ USA_guarantee_the_american_dream_desc:0 "Most of our people don't wish for much in life, stable employment, good health, and a place to start a family. There is no reason why they shouldn't have that."
  USA_worker_management_act:1 "Worker Management Act"
  USA_worker_management_act_desc:1 "Far too often factories and offices are managed by people who have never worked on the shop floor. Unable to understand the realities of production, they set unrealistic expectations. To safeguard our economy from the damage such incompetent managers can cause, we will enforce management of the workers, by the workers, for the workers!"
  USA_militia_organization_act:1 "Militia Organization Act"
@@ -2313,8 +2313,6 @@ USA_continue_the_new_deal:1 "Continue the New Deal"
  sirte_oil_developed:0 "Sirte Oil Fields Developed"
  USA_create_aofn:0 "Form the A.O.F.N."
  USA_create_aofn_desc:0 "To combat the ever changing threats in our world, we must form a strong alliance against our foes. We must from the Alliance of Free Nations"
-
-
 #######
 ######
 #####
@@ -2346,7 +2344,7 @@ paraguay_focus:0 "National Focus"
  PAR_fighter_focus_desc:0 "We have not seen that last of dogfights in the Great War. Keeping ahead in the development of fighter planes will give us an edge in the future."
  PAR_bomber_focus:0 "Bomber Focus"
  PAR_bomber_focus_desc:0 "When people of the future speak of the horror to today's wars, fire raining from the skies will prominently feature. We will do our best to ensure those stories are told by our enemies."
-PAR_aviation_effort_2:0 "Aviation Effort II"
+ PAR_aviation_effort_2:0 "Aviation Effort II"
  PAR_aviation_effort_2_desc:0 "Further advances in aviation will be necessary to integrate our air force well with other branches of the military."
  PAR_CAS_effort:0 "CAS Effort"
  PAR_CAS_effort_desc:0 "A modern army needs support from vehicles not only on the ground, but also in the air."
@@ -2438,7 +2436,7 @@ comchina_focus:0 "National Focus"
  PRC_fighter_focus_desc:0 "We have not seen that last of dogfights in the Great War. Keeping ahead in the development of fighter planes will give us an edge in the future."
  PRC_bomber_focus:0 "Bomber Focus"
  PRC_bomber_focus_desc:0 "When people of the future speak of the horror to today's wars, fire raining from the skies will prominently feature. We will do our best to ensure those stories are told by our enemies."
-PRC_aviation_effort_2:0 "Aviation Effort II"
+ PRC_aviation_effort_2:0 "Aviation Effort II"
  PRC_aviation_effort_2_desc:0 "Further advances in aviation will be necessary to integrate our air force well with other branches of the military."
  PRC_CAS_effort:0 "CAS Effort"
  PRC_CAS_effort_desc:0 "A modern army needs support from vehicles not only on the ground, but also in the air."
@@ -2495,24 +2493,54 @@ PRC_aviation_effort_2:0 "Aviation Effort II"
  PRC_technology_sharing_desc:0 "By sharing technological advances with our allies, our whole faction will be able to conduct wartime R&D more efficiently."
  PRC_secret_weapons:0 "Secret Weapons"
  PRC_secret_weapons_desc:0 "It is tempting to expend all extra resources into developing tanks and planes, but the secret to winning wars lies in whole new fields of science; electronics, rocketry and nuclear research."
-PRC_first_volunteers:0 "First Volunteers"
+ PRC_first_volunteers:0 "First Volunteers"
  PRC_first_volunteers_desc:0 "Some foreign, some domestic, people are flocking to join our cause and way of life!"
-PRC_people_front:0 "Form the People's Front"
-PRC_people_front_desc:0 "We must announce ourselves to the world as the 'People's Front' "
-PRC_slow_go:0 "Take Time to Prepare"
-PRC_people_front_desc:0 "We must take out time in preparing for our takeover of Asian countries..."
-PRC_fast_go:0 "No Time to Prepare"
-PRC_fast_go_desc:0 "There is no time to hesitate in our battle with our neighbors!"
-PRC_strike_the_north:0 "Strike the North"
-PRC_strike_the_north_desc:0 "We must strike the North!!!"
-PRC_strike_the_west:0 "Strike the West"
-PRC_strike_the_west_desc:0 "We must strike the West!!!"
-PRC_strike_the_south:0 "Strike the South"
-PRC_strike_the_south_desc:0 "We must strike the South!!!"
-PRC_southern_push:0 "The Southern Push"
-PRC_southern_push_desc:0 "We now start our final southern push..."
-PRC_strike_the_giant:0 "Strike the Giant!"
-PRC_strike_the_giant_desc:0 "Japan must be taken out to ensure our dominance of the continent!"
+ PRC_people_front:0 "Form the People's Front"
+ PRC_people_front_desc:0 "We must announce ourselves to the world as the 'People's Front' "
+ PRC_slow_go:0 "Take Time to Prepare"
+ PRC_people_front_desc:0 "We must take out time in preparing for our takeover of Asian countries..."
+ PRC_fast_go:0 "No Time to Prepare"
+ PRC_fast_go_desc:0 "There is no time to hesitate in our battle with our neighbors!"
+ PRC_strike_the_north:0 "Strike the North"
+ PRC_strike_the_north_desc:0 "We must strike the North!!!"
+ PRC_strike_the_west:0 "Strike the West"
+ PRC_strike_the_west_desc:0 "We must strike the West!!!"
+ PRC_strike_the_south:0 "Strike the South"
+ PRC_strike_the_south_desc:0 "We must strike the South!!!"
+ PRC_southern_push:0 "The Southern Push"
+ PRC_southern_push_desc:0 "We now start our final southern push..."
+ PRC_strike_the_giant:0 "Strike the Giant!"
+ PRC_strike_the_giant_desc:0 "Japan must be taken out to ensure our dominance of the continent!"
 ##########################
 ##########################
 yugoslavia_focus:0 "National Focus"
+ YUG_foreign_policy:0 "Foreign Policy"
+ YUG_foreign_policy_desc:0 "With out country situated in the middle of the Balkans we have many options in how to project our country to the world."
+ YUG_support_be:0
+ YUG_support_be_desc:0
+ YUG_be_ideals:0
+ YUG_be_ideals_desc:0
+ YUG_aid_military:0
+ YUG_aid_military_desc:0
+ YUG_aid_econ:0
+ YUG_aid_econ_desc:0
+ YUG_aid_greece:0
+ YUG_aid_greece_desc:0
+ YUG_aid_romania:0
+ YUG_aid_romania_desc:0
+ YUG_aid_turkey:0
+ YUG_aid_turkey_desc:0
+ YUG_establish_be_security:0
+ YUG_establish_be_security_desc:0
+ YUG_invade_hungary:0
+ YUG_invade_hungary_desc:0
+ YUG_declare_be:0
+ YUG_declare_be_desc:0
+ YUG_invade_bulgaria:0
+ YUG_invade_bulgaria_desc:0
+ YUG_invite_alb:0
+ YUG_invite_alb_desc:0
+ YUG_invade_alb:0
+ YUG_invade_alb_desc:0
+ YUG_protect_alb:0
+ YUG_protect_alb_desc:0
