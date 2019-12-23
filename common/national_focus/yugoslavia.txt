@@ -394,7 +394,7 @@ available = {
 	}
 focus = {
 		id = YUG_approach_germany
-		icon = GFX
+		icon = GFX_goal_german_flag
 		prerequisite = { focus =  YUG_support_communists }
 		mutually_exclusive = { focus = YUG_approach_soviets }
 		x = -1
@@ -412,7 +412,7 @@ available = {
 	}
 focus = {
 		id = YUG_approach_soviets
-		icon = GFX_goal_
+		icon = GFX_goal_soviet_flag
 		prerequisite = { focus = YUG_support_communists }
 		mutually_exclusive = { focus = YUG_approach_germany }
 		x = 1
@@ -464,7 +464,7 @@ available = {
 	}
 focus = {
 		id = YUG_invite_trotsky
-		icon = GFX_goal_
+		icon = GFX_goal_trotsky
 		prerequisite = { focus = YUG_join_comintern_yug }
 		x = 0
 		y = 1
@@ -515,7 +515,7 @@ available = {
 	}
 focus = {
 		id = YUG_support_germany
-		icon = GFX_goal_
+		icon = GFX_goal_support_germany
 		prerequisite = { focus = YUG_intervene_civilwar }
 		x = 0
 		y = 1
@@ -657,7 +657,7 @@ available = {
 	}
 focus = {
 		id = YUG_return_montangaro
-		icon = GFX_goal_
+		icon = GFX_goal_montengero
 		prerequisite = { focus = YUG_go_italy }
 		x = 0
 		y = 1
@@ -674,7 +674,7 @@ available = {
 	}
 focus = {
 		id = YUG_return_macedonia
-		icon = GFX_goal_
+		icon = GFX_goal_macedonia
 		prerequisite = { focus = YUG_return_montangaro }
 		x = 0
 		y = 1
@@ -691,7 +691,7 @@ available = {
 	}
 focus = {
 		id = YUG_return_vonjovado
-		icon = GFX_goal_
+		icon = GFX_goal_vojvodina
 		prerequisite = { focus = YUG_return_macedonia }
 		x = 0
 		y = 1
@@ -708,7 +708,7 @@ available = {
 	}
 focus = {
 		id = YUG_become_balktanica_serbia
-		icon = GFX_goal_
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = YUG_return_vonjovado }
 		x = 0
 		y = 1
@@ -742,7 +742,7 @@ available = {
 	}
 focus = {
 		id = YUG_find_emperor
-		icon = GFX_goal_
+		icon = GFX_goal_find_leader
 		prerequisite = { focus = YUG_yug_ideals }
 		x = 0
 		y = 1
@@ -759,7 +759,7 @@ available = {
 	}
 focus = {
 		id = YUG_form_roman
-		icon = GFX_goal_
+		icon = GFX_goal_roman
 		prerequisite = { focus = YUG_go_alone }
 		x = 0
 		y = 1
@@ -793,7 +793,7 @@ available = {
 	}
 focus = {
 		id = YUG_retake_rome
-		icon = GFX_goal_
+		icon = GFX_goal_italy_civilwar
 		prerequisite = { focus = YUG_our_claims }
 		x = 0
 		y = 1
@@ -844,7 +844,7 @@ available = {
 	}
 focus = {
 		id = YUG_scrap_airforce
-		icon = GFX_goal_
+		icon = GFX_goal_expand_the_luftwaffe
 		prerequisite = { focus = YUG_modernize_airforce }
 		mutually_exclusive = { focus = YUG_build_airforce }
 		x = 1
@@ -862,7 +862,7 @@ available = {
 	}
 focus = {
 		id = YUG_italian_aircraft
-		icon = GFX_goal_
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = YUG_build_airforce focus = YUG_scrap_airforce }
 		x = -1
 		y = 1
@@ -879,7 +879,7 @@ available = {
 	}
 focus = {
 		id = YUG_balkan_airforce
-		icon = GFX_goal_
+		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = YUG_build_airforce focus = YUG_scrap_airforce }
 		x = 1
 		y = 1
@@ -896,7 +896,7 @@ available = {
 	}
 focus = {
 		id = YUG_german_airforce
-		icon = GFX_goal_
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = YUG_build_airforce focus = YUG_scrap_airforce }
 		x = 3
 		y = 1
@@ -948,7 +948,7 @@ available = {
 ######################
 focus = {
 		id = YUG_modernize_army
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 29
 		y = 0
 		cost = 10
@@ -963,7 +963,7 @@ available = {
 	}
 focus = {
 		id = YUG_build_army
-		icon = GFX_goal_
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = YUG_modernize_army }
 		mutually_exclusive = { focus = YUG_scrap_army }
 		x = -1
@@ -981,7 +981,7 @@ available = {
 	}
 focus = {
 		id = YUG_scrap_army
-		icon = GFX_goal_
+		icon = GFX_goal_panzerwaffe
 		prerequisite = { focus = YUG_modernize_army }
 		mutually_exclusive = { focus = YUG_build_army }
 		x = 1
@@ -999,7 +999,7 @@ available = {
 	}
 focus = {
 		id = YUG_italian_tanks
-		icon = GFX_goal_
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = YUG_build_army focus = YUG_scrap_army }
 		x = -1
 		y = 1
@@ -1016,7 +1016,7 @@ available = {
 	}
 focus = {
 		id = YUG_balkan_soldiers
-		icon = GFX_goal_
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = YUG_build_army focus = YUG_scrap_army }
 		x = 1
 		y = 1
@@ -1033,7 +1033,7 @@ available = {
 	}
 focus = {
 		id = YUG_german_tanks
-		icon = GFX_goal_
+		icon = GFX_goal_panzerwaffe
 		prerequisite = { focus = YUG_build_army focus = YUG_scrap_army }
 		x = 3
 		y = 1
@@ -1050,7 +1050,7 @@ available = {
 	}
 focus = {
 		id = YUG_doctrine_focus
-		icon = GFX_goal_
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = YUG_german_tanks focus = YUG_italian_tanks focus = YUG_balkan_soldiers }
 		x = 1
 		y = 1
@@ -1073,7 +1073,7 @@ available = {
 	}
 focus = {
 		id = YUG_military_training
-		icon = GFX_goal_
+		icon = GFX_goal_continuous_reduce_training_time
 		prerequisite = { focus = YUG_german_tanks focus = YUG_italian_tanks focus = YUG_balkan_soldiers }
 		x = -1
 		y = 1
@@ -1091,7 +1091,7 @@ available = {
 ##############################
 focus = {
 		id = YUG_modernize_navy
-		icon = GFX_goal_
+		icon = GFX_goal_generic_navy_cruiser
 		x = 2
 		y = 1
 		relative_position_id = YUG_german_airforce
@@ -1107,7 +1107,7 @@ available = {
 	}
 focus = {
 		id = YUG_build_navy
-		icon = GFX_goal_
+		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = YUG_modernize_navy }
 		mutually_exclusive = { focus = YUG_scrap_navy }
 		x = -1
@@ -1125,7 +1125,7 @@ available = {
 	}
 focus = {
 		id = YUG_scrap_navy
-		icon = GFX_goal_
+		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = YUG_modernize_navy }
 		mutually_exclusive = { focus = YUG_build_navy }
 		x = 1
@@ -1143,7 +1143,7 @@ available = {
 	}
 focus = {
 		id = YUG_italian_boats
-		icon = GFX_goal_
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = YUG_build_navy focus = YUG_scrap_navy }
 		x = -1
 		y = 1
@@ -1160,7 +1160,7 @@ available = {
 	}
 focus = {
 		id = YUG_balkan_boats
-		icon = GFX_goal_
+		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = YUG_build_navy focus = YUG_scrap_navy }
 		x = 1
 		y = 1
@@ -1177,7 +1177,7 @@ available = {
 	}
 focus = {
 		id = YUG_german_boats
-		icon = GFX_goal_
+		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = YUG_build_navy focus = YUG_scrap_navy }
 		x = 3
 		y = 1
@@ -1194,7 +1194,7 @@ available = {
 	}
 focus = {
 		id = YUG_doctrine_focus_navy
-		icon = GFX_goal_
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = YUG_german_boats focus = YUG_italian_boats focus = YUG_balkan_boats }
 		x = 1
 		y = 1
@@ -1211,7 +1211,7 @@ available = {
 	}
 focus = {
 		id = YUG_navy_training
-		icon = GFX_goal_
+		icon = GFX_goal_continuous_naval_production
 		prerequisite = { focus = YUG_german_boats focus = YUG_italian_boats focus = YUG_balkan_boats }
 		x = -1
 		y = 1
@@ -1278,7 +1278,7 @@ available = {
 	}
 focus = {
 		id = YUG_new_processes
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = YUG_develop_civ_factories focus = YUG_develop_military_factories }
 		x = -1
 		y = 1
@@ -1295,7 +1295,7 @@ available = {
 	}
 focus = {
 		id = YUG_new_ports
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = YUG_new_processes }
 		x = -3
 		y = 1
@@ -1312,7 +1312,7 @@ available = {
 	}
 focus = {
 		id = YUG_new_mil_factories
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = YUG_new_processes }
 		x = -1
 		y = 1
@@ -1329,7 +1329,7 @@ available = {
 	}
 focus = {
 		id = YUG_balkan_invest
-		icon = GFX_goal_
+		icon = GFX_goal_support_be
 		prerequisite = { focus = YUG_new_processes }
 		x = 1
 		y = 1
@@ -1346,7 +1346,7 @@ available = {
 	}
 focus = {
 		id = YUG_civ_factories
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = YUG_new_processes }
 		x = 3
 		y = 1
@@ -1363,7 +1363,7 @@ available = {
 	}
 focus = {
 		id = YUG_civ_factories_one
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = YUG_civ_factories }
 		x = 0
 		y = 1
@@ -1380,7 +1380,7 @@ available = {
 	}
 focus = {
 		id = YUG_civ_factories_two
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = YUG_civ_factories_one }
 		x = 0
 		y = 1
@@ -1414,7 +1414,7 @@ available = {
 	}
 focus = {
 		id = YUG_border_defense
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = YUG_increase_infa }
 		x = 0
 		y = 1
@@ -1431,7 +1431,7 @@ available = {
 	}
 focus = {
 		id = YUG_new_mil_factories_one
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = YUG_new_mil_factories }
 		x = 0
 		y = 1
@@ -1448,7 +1448,7 @@ available = {
 	}
 focus = {
 		id = YUG_new_mil_factories_two
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = YUG_new_mil_factories_one }
 		x = 0
 		y = 1
@@ -1465,7 +1465,7 @@ available = {
 	}
 focus = {
 		id = YUG_naval_infaststrucure
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = YUG_new_ports }
 		x = 0
 		y = 1
