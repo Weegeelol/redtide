@@ -1603,6 +1603,7 @@ SpriteType = { name = "GFX_goal_support_romania"       texturefile = "gfx/interf
 SpriteType = { name = "GFX_goal_tito"       texturefile = "gfx/interface/goals/goal_tito.dds" }
 SpriteType = { name = "GFX_goal_world_revolution"       texturefile = "gfx/interface/goals/goal_world_revolution.dds" }
 SpriteType = { name = "GFX_goal_cuban_civilwar"       texturefile = "gfx/interface/goals/goal_cuban_civilwar.dds" }
+SpriteType = { name = "GFX_goal_foreign_policy"       texturefile = "gfx/interface/goals/goal_foreign_policy.dds" }
 
 ################
 }
