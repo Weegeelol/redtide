@@ -2984,7 +2984,7 @@
  news.337.t:0 "The German Civil War"
  news.337.d:0 "The German Socialists have declared their independence from Hitler's regime. Now the German people again must raise arms again, but this time they must make a choice on who to support"
  news.337.a:0 "The world plunges into violence once again..."
-############# 
+#############
 excellent:0 "Excellent."
  unfortunate:0 "Unfortunate."
  stability.21.t:0 "Draft Dodging"
@@ -3191,7 +3191,7 @@ excellent:0 "Excellent."
 ##########################
 soviet.1.t:0 "Trotsky has returned peacefully!"
 soviet.1.d:0 "The Soviet Citizens have awoken to news that Trotsky is their to leader. No word has been given on the whereabouts of Stalin. New change is bound to come..."
-soviet.1.a:0 "Welcome Comrade" 
+soviet.1.a:0 "Welcome Comrade"
 poland.2.t:0 "Soviet Union Demands the East"
 poland.2.d:0 "Having reasserted their claims on our eastern territories, the Soviet Union has now put pressure on us to cede this land to them, suggesting that this is the only way to avoid another invasion and possible annexation or partition.\n\nOrdinarily, giving in to such threats easily would be out of the question, but the Soviet Union is far from our only concern. If we agree to their demands, we may have less to worry about on the eastern front, although it would also position the eastern front significantly further to the west."
 poland.2.a:0 "Give up the east peacefully."
@@ -3210,3 +3210,6 @@ germany.1002.d:0 "After our Red Scare and the civil war the public is shook by t
 germany.1002.a:0 "We must stomp out those nasty communists..."
 germany.1002.b:0 "We can't aford another war, but communism must be stopped"
 germany.1002.c0 "Let's skip the speech actually..."
+news.340.t:0 "Yugoslavian Investments"
+news.340.d:0 "Yugoslavia has announced plans to invest in their Balkan neighbors "
+news.340.a:0 "Nothing fishy..."

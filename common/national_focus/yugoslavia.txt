@@ -125,7 +125,9 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		GRE = { add_ideas = GRE_aided_military }
+		TUR = { add_ideas = TUR_aided_military }
+		ROM = { add_ideas = ROM_aided_military }
 		}
 	}
 focus = {
@@ -143,7 +145,9 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		GRE = { add_ideas = GRE_aided_economically }
+		TUR = { add_ideas = TUR_aided_economically }
+		ROM = { add_ideas = ROM_aided_economically }
 		}
 	}
 focus = {
@@ -159,9 +163,15 @@ available = {
 		}
 		available_if_capitulated = yes
 
-		completion_reward = {
-
+		hidden_effect = {
+		news_event = {
+				id = news.340
+				days = 10
 		}
+		}
+				completion_reward = {
+		add_political_power = 50
+				}
 	}
 focus = {
 		id = YUG_aid_greece
@@ -175,9 +185,14 @@ available = {
 
 		}
 		available_if_capitulated = yes
-
+hidden_effect = {
+news_event = {
+		id = news.340
+		days = 10
+}
+}
 		completion_reward = {
-
+add_political_power = 50
 		}
 	}
 focus = {
@@ -193,9 +208,15 @@ available = {
 		}
 		available_if_capitulated = yes
 
-		completion_reward = {
-
+		hidden_effect = {
+		news_event = {
+				id = news.340
+				days = 10
 		}
+		}
+				completion_reward = {
+		add_political_power = 50
+				}
 	}
 focus = {
 		id = YUG_establish_be_security
@@ -211,7 +232,8 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_war_support = 0.2
+add_stability = 0.4
 		}
 	}
 focus = {
@@ -224,11 +246,14 @@ focus = {
 		cost = 10
 available = {
 
-		}
+}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = HUN
+		}
 		}
 	}
 
@@ -246,7 +271,10 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = BUL
+		}
 		}
 	}
 focus = {
@@ -263,7 +291,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+create_faction = "The Balkan Entente"
 		}
 	}
 focus = {
@@ -276,12 +304,12 @@ focus = {
 		relative_position_id = YUG_declare_be
 		cost = 10
 available = {
-
+is_faction_leader = yes
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+YUG = { add_to_faction = ALB }
 		}
 	}
 focus = {
@@ -299,7 +327,11 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		diplomatic_relation = {
+		    country = ALB
+		    relation = guarantee
+		    active = yes
+		}
 		}
 	}
 focus = {
@@ -317,7 +349,10 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = ALB
+		}
 		}
 	}
 ########################
