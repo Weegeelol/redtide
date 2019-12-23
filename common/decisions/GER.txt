@@ -225,7 +225,7 @@ GER_mefo_bills_category = {
 				}
 				add_political_power = -380
 				add_timed_idea = { idea = GER_mefo_bills_ended days = 420 }
-			}			
+			}
 		}
 
 		ai_will_do = {
@@ -267,7 +267,7 @@ operations = {
 		}
 
 		timeout_effect = {
-			
+
 		}
 
 		ai_will_do = {
@@ -502,7 +502,7 @@ GER_reichskommissariats = {
 						puppet = PREV
 						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 					}
-					
+
 					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Arthur Seyss-Inquart"
@@ -698,7 +698,7 @@ GER_reichskommissariats = {
 						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
 					}
 				}
-				
+
 				set_cosmetic_tag = BLR_reichskommissariat
 				create_country_leader = {
 					name = "Hinrich Lohse"
@@ -835,7 +835,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 100
@@ -861,7 +861,7 @@ political_actions = {
 			}
 		}
 	}
-	
+
 	# Agnatic-Cognatic Primogeniture
 	modernize_the_succession_laws = {
 
@@ -870,7 +870,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 150
@@ -940,7 +940,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 50
@@ -963,7 +963,7 @@ political_actions = {
 }
 
 foreign_politics = {
-	
+
 	# Titles Deprivation Act 1917
 	request_restoration_of_british_titles = {
 
@@ -1075,7 +1075,7 @@ GER_military_buildup = {
 			has_completed_focus = GER_plan_z
 		}
 
-		
+
 		visible = {
 			has_completed_focus = GER_plan_z
 		}
@@ -1085,7 +1085,7 @@ GER_military_buildup = {
 			navy_experience = 150
 		}
 
-		
+
 	}
 
 	GER_jaegernotprogramm = {
@@ -1225,7 +1225,7 @@ special_projects = {
 				}
 			}
 		}
-	}	
+	}
 	GER_dismantle_czechoslovakian_forts = {
 
 		icon = generic_construction
@@ -1411,7 +1411,7 @@ special_projects = {
 		complete_effect = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
-	}	
+	}
 }
 
 GER_aid_hun_rom_democratic_civil_war = {
@@ -1562,8 +1562,8 @@ GER_austro_hungarian_empire = {
 		}
 
 		visible = {
-			GER = { 
-				has_completed_focus = GER_rekindle_imperial_sentiment 
+			GER = {
+				has_completed_focus = GER_rekindle_imperial_sentiment
 				has_government = neutrality
 			}
 			AUS = {
@@ -1621,36 +1621,36 @@ GER_austro_hungarian_empire = {
 	}
 }
 
-GER_anti_communists = { 
-GER_spies_to_the_ussr = { 
-cost = 100 
-complete_effect = { 
-add_opinion_modifier = { target = SOV modifier = large_decrease } 
-add_command_power = 100 
+GER_anti_communists = {
+GER_spies_to_the_ussr = {
+cost = 100
+complete_effect = {
+add_opinion_modifier = { target = SOV modifier = large_decrease }
+add_command_power = 100
 }
 }
  }
 
-peace_deals = { 
-GER_austria_deal = { 
+peace_deals = {
+GER_austria_deal = {
 available = {
 			AUS = {
 				OR = {
 					has_government = fascism
 					fascism > 0.4
-				
+
 		}
 			}
 surrender_progress > 0.30
 }
-cost = 100 
-complete_effect = { 
+cost = 100
+complete_effect = {
 AUS = { change_tag_from = GER }
 set_global_glag = germans_lost
 CGR = { transfer_state = 54
 transfer_state = 64
 transfer_state = 5
-transfer_state = 59 
+transfer_state = 59
 transfer_state = 55
 transfer_state = 63
 transfer_state = 763
@@ -1671,45 +1671,7 @@ transfer_state = 57
 transfer_state = 50
 }
 
-
 }
 }
 #
-GER_ostprussian = { 
-cost = 50 
-available = {
-			
-  CGR = { surrender_progress > 0.30 }
-}
-
-complete_effect = { 
-GER = { transfer_state = 54
-transfer_state = 64
-transfer_state = 59 
-transfer_state = 55
-transfer_state = 63
-transfer_state = 61
-transfer_state = 42
-transfer_state = 53
-transfer_state = 66
-transfer_state = 52
-transfer_state = 67
-transfer_state = 68
-transfer_state = 51
-transfer_state = 65
-transfer_state = 58
-transfer_state = 60
-transfer_state = 62
-transfer_state = 56
-transfer_state = 57
-transfer_state = 50
-}
-CGR = { transfer_state = 763
-transfer_state = 5 }
-add_country_leader_trait = savior_of_germany
-add_country_leader_trait = scared_of_communism
-}
-}
-
-
  }
