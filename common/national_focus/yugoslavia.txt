@@ -1483,7 +1483,7 @@ available = {
 
 focus = {
 		id = YUG_more_ports
-		icon = GFX_goal_
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = YUG_naval_infaststrucure }
 		x = 0
 		y = 1
