@@ -6106,26 +6106,50 @@ trigger = {
 	}
 
 	mean_time_to_happen = {
-		days = 20
+		days = 2
 	}
 	
 	option = {
 		name = germany.1001.a
-		GER = { start_civil_war = {
-    ruling_party = ROOT
-    ideology = communism
-    size = 0.5
-    only_own_territory = no
-
-    states = { 
-         52 53 54 50 58 5 763
-    }
-}
-}
+#
 set_global_flag = german_civil_war
-add_threat = 10		
+add_named_threat = { 
+    threat = 15
+    name = GER_civil_war
+}	
 hidden_effect = {news_event = { hours = 1 id = news.337 }
 }
 }
 
 
+country_event = {
+	id = germany.1002
+	title = germany.1002.t
+	desc = germany.1002.d
+	picture = GFX_report_event_french_british_officers
+ fire_only_once = yes
+trigger = {
+		NOT = {  GER = { has_war_wth = CGR }}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = germany.1002.a
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SOV
+}
+}	
+	option = {
+		name = germany.1002.b
+add_stability = 0.4
+}	
+
+	option = {
+		name = germany.1002.c
+
+}	
+}

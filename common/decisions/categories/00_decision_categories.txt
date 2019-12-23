@@ -1,3 +1,15 @@
+
+peace_deals = {
+	
+	icon = generic_formable_nations
+	picture = GFX_decision_cat_picture_government_in_exile
+	allowed = {
+		tag = GER
+	}
+}
+
+
+##############
 propaganda_efforts = {
 	icon = generic_propaganda
 

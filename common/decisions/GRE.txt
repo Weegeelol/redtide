@@ -1,0 +1,54 @@
+foreign_support = {
+GRE_roads = {
+available = {
+			YUG = { has_completed_focus = YUG_aid_greece }
+
+}
+visible = {
+tag = GRE
+}
+
+		fire_only_once = yes
+
+		cost = 25
+complete_effect = {
+ 186 = { add_building_construction = { type = infrastructure level = 8 instant_build = yes } }
+ 185 = { add_building_construction = { type = infrastructure level = 8 instant_build = yes } }
+}
+}
+
+GRE_civ= {
+available = {
+			YUG = { has_completed_focus = YUG_aid_greece }
+
+}
+visible = {
+tag = GRE
+}
+
+		fire_only_once = yes
+
+		cost = 25
+complete_effect = {
+add_offsite_building = { type = industrial_complex level = 1 }
+}
+}
+
+GRE_mil = {
+available = {
+			YUG = { has_completed_focus = YUG_aid_greece }
+
+}
+visible = {
+tag = GRE
+}
+
+		fire_only_once = yes
+
+		cost = 25
+complete_effect = {
+add_offsite_building = { type = arms_factory }
+}
+}
+#
+}

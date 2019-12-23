@@ -1395,7 +1395,6 @@ focus_tree = {
 	focus = {
 		id = ITA_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		text = submarine_effort
 		prerequisite = { focus = ITA_light_ship_effort }
 		x = 0
 		y = 1
@@ -1491,7 +1490,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		x = 19
+		x = 21
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1636,7 +1635,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 23
+		x = 25
 		y = 0
 		cost = 4.4
 		ai_will_do = {
@@ -1803,6 +1802,11 @@ focus = {
 				}
 			}
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+		
+
+			country_exists = GER
+		
+
 		}
 		x = -1
 		y = 1
@@ -2265,7 +2269,29 @@ focus = {
 			}
 		}
 	}
+############################
+focus = {
+		id = ITA_create_fl
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = ITA_german_focus }
+		x = 3
+		y = 1
+		relative_position_id = ITA_german_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+			country_exists = GER }
+		
+		}
+		available_if_capitulated = yes
 
+		completion_reward = {
+		create_faction = "Fascist League"
+		}
+	}
 	
 
 	

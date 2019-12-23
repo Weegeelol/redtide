@@ -26,3 +26,16 @@ SOV_great_patriotic_war = {
 	}
 		
 }
+
+SOV_de_stalin_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		NOT = { has_country_leader = {
+    name = "Joseph Stalin"
+    ruling_only = yes
+}	
+}
+}		
+}

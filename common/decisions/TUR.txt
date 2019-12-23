@@ -8,7 +8,7 @@ political_actions = {
 		}
 		available = {
 			has_country_leader = { ruling_only = yes name = "Mustafa Kemal Atatürk" }
-			has_defensive_war = yes			
+			has_defensive_war = yes
 		}
 		visible = {
 			date < 1938.11.10
@@ -35,4 +35,59 @@ political_actions = {
 			add_stability = -0.05
 		}
 	}
-}	
+}
+
+foreign_support = {
+TUR_roads = {
+available = {
+			YUG = { has_completed_focus = YUG_aid_turkey }
+
+}
+visible = {
+tag = TUR
+}
+
+		fire_only_once = yes
+
+		cost = 25
+complete_effect = {
+ 340 = { add_building_construction = { type = infrastructure level = 8 instant_build = yes } }
+ 341 = { add_building_construction = { type = infrastructure level = 8 instant_build = yes } }
+}
+}
+
+TUR_civ= {
+available = {
+			YUG = { has_completed_focus = YUG_aid_turkey }
+
+}
+visible = {
+tag = TUR
+}
+
+		fire_only_once = yes
+
+		cost = 25
+complete_effect = {
+add_offsite_building = { type = industrial_complex level = 1 }
+}
+}
+
+TUR_mil = {
+available = {
+			YUG = { has_completed_focus = YUG_aid_turkey }
+
+}
+visible = {
+tag = TUR
+}
+
+		fire_only_once = yes
+
+		cost = 25
+complete_effect = {
+add_offsite_building = { type = arms_factory }
+}
+}
+#
+}

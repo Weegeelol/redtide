@@ -69,7 +69,7 @@ bookmarks = {
 		}
 
 
-		# minors from DLC ####
+		####Minors
 		"ITA"={
 			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
@@ -82,7 +82,18 @@ bookmarks = {
 			}
 		}
 		
-		
+		"CGR"={
+			minor = yes
+			history = "CGR_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+	
+			}
+		}		
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

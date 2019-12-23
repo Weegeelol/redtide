@@ -8,9 +8,23 @@
 -Added Soviet Focus "Farm Collectivisation"
 -Added Soviet Focus
 #############
--Added Focus De-Stalinization (+De-Stalinzation Idea)
+-Added Focus De-Stalinization (+De-Stalinzation Idea) and descions
 -Added Trait "Scared by Communism"
+-Added Trait "Savior of Germany"
 -Added Anti-Communist Descions for Germany (More Comeing)
--
+-Now able to play Communist Germany
+-Reowrked Civil War
+-Communist Germany is now its own country
+-Parguay has a small, but unique tree
+-Added Socialist States of America Faction (Paraguay Focus Tree)
+-Communist China small, but unique tree
+-Yugoslavia "Balkan Entente"
+-Added two peace deals for Germany to end the war
+-Italy "Fascist League"
+-USA "Alliance of Free Nations"
+-End of Civil War Event
+-Re-Name Satlingrad
+-Added Support for Paraguay
+-Added Germany Ant-Communism Speech (if they win the civil war)
 -Fixed Bugs
 -Fixed Spelling

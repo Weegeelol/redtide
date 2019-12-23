@@ -2,7 +2,7 @@ focus_tree = {
 	id = usa_focus
 	
 	country = {
-		factor = 2
+		factor = 0
 		
 		modifier = {
 			add = 10
@@ -1527,7 +1527,6 @@ focus_tree = {
 		x = -1
 		y = 3
 		prerequisite = { focus = USA_war_propaganda }
-		mutually_exclusive = { focus = USA_focus_on_asia }
 		relative_position_id = USA_limited_intervention
 		cost = 10
 
@@ -1663,7 +1662,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = USA_magic focus = USA_office_of_strategic_services}
 		available = { }
-		x = 1
+		x = 0
 		y = 3
 		relative_position_id = USA_war_propaganda
 		cost = 10
@@ -1685,10 +1684,10 @@ focus_tree = {
 	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
-		prerequisite = { focus = USA_black_chamber focus = USA_arsenal_of_democracy }
-		x = 1
+		prerequisite = { focus = USA_arsenal_of_democracy }
+		x = -1
 		y = 1
-		relative_position_id = USA_black_chamber
+		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1708,7 +1707,7 @@ focus_tree = {
 		prerequisite = { focus = USA_scientist_haven }
 		
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = USA_scientist_haven
 		cost = 10
 		#ai_will_do = {
@@ -2451,9 +2450,6 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_continue_the_new_deal }
 		available = {
 			has_government = democratic
-			NOT = {
-				has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
-			}
 		}
 		
 		bypass = {
@@ -3853,7 +3849,7 @@ focus_tree = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
 		x = 42
-		y = 0
+		y = 4
 		offset = {
 			x = -26
 			y = 0
@@ -3862,7 +3858,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -3889,7 +3885,7 @@ focus_tree = {
 	focus = {
 		id = USA_intervention_in_the_americas
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -4
+		x = -2
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -3915,69 +3911,12 @@ focus_tree = {
 			add_ideas = USA_intervention_in_the_americas
 		}
 	}
-	focus = {
-		id = USA_war_plan_green
-		icon = GFX_focus_attack_mexico
-		x = -1
-		y = 1
-		prerequisite = { focus = USA_intervention_in_the_americas }
-		relative_position_id = USA_intervention_in_the_americas
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_green show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
-	focus = {
-		id = USA_war_plan_crimson
-		icon = GFX_focus_attack_canada
-		x = 1
-		y = 1
-		prerequisite = { focus = USA_intervention_in_the_americas }
-		relative_position_id = USA_intervention_in_the_americas
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_crimson show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
+	
 	focus = {
 		id = USA_reinforce_monroe_doctrine
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = { focus = USA_intervention_in_the_americas }
 		relative_position_id = USA_intervention_in_the_americas
 		cost = 10
@@ -4017,7 +3956,7 @@ focus_tree = {
 		id = USA_war_plan_gray
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_reinforce_monroe_doctrine }
 		relative_position_id = USA_intervention_in_the_americas
 		cost = 10
@@ -4046,7 +3985,7 @@ focus_tree = {
 		id = USA_hemisphere_defense
 		icon = GFX_goal_generic_defence
 		x = 0
-		y = 4
+		y = 3
 		prerequisite = { focus = USA_war_plan_gray }
 		relative_position_id = USA_intervention_in_the_americas
 		cost = 10
@@ -4148,8 +4087,8 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_gold
 		icon = GFX_focus_attack_france
-		x = -2
-		y = 2
+		x = 3
+		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
 		relative_position_id = USA_intervention_in_europe
 		cost = 10
@@ -4177,7 +4116,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
-		x = -1
+		x = 1
 		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
 		mutually_exclusive = { }
@@ -5894,12 +5833,29 @@ focus_tree = {
 			}
 		}
 	}
-
 	
 
-	
 
-	
+################
 
+focus = {
+		id = USA_create_aofn
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_hemisphere_defense }
+		x = 0
+		y = 1
+		relative_position_id = USA_hemisphere_defense
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			create_faction = "Alliance of Free Nations"
+		}
+	}
 	
 }
+

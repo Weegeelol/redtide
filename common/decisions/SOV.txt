@@ -1453,3 +1453,16 @@ political_actions = {
 	}	
 
 }
+
+######################
+SOV_de_stalin_decisions = {
+SOV_rename_stalin = { 
+cost = 25
+complete_effect = { 
+set_province_name = {
+    id = 3529
+    name = "Leongrad"
+}
+}
+}
+}

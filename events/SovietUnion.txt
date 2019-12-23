@@ -16,7 +16,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 6
+		days = 10
 		}
 
 	option = {
@@ -2420,4 +2420,38 @@ country_event = {
 		drop_cosmetic_tag = yes
 		clr_global_flag = SOV_became_russia
 	}
+}
+
+
+
+
+country_event = {
+	id = soviet.66
+	title = soviet.66.t
+	desc = soviet.66.d
+	picture = GFX_report_event_french_british_officers
+ fire_only_once = yes
+is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = soviet.66.a
+	send_equipment = {
+    equipment = infantry_equipment
+    amount = 5000
+    target = PAR
+}
+}	
+	option = {
+		name = soviet.66.b
+    SOV = { add_to_faction = PAR }
+}	
+
+	option = {
+		name = soviet.66.c
+
+}	
 }

@@ -1963,7 +1963,7 @@ focus = {
 	}
 
 focus = {
-		id = SOV_venezuela_civil
+		id = SOV_iraq_civil
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SOV_afghan_civil }
 		available = {
@@ -1981,7 +1981,7 @@ focus = {
 
 		completion_reward = {
 	
-	VEN = { start_civil_war = {
+	IRQ = { start_civil_war = {
     ideology = communism
     size = 0.4
     only_own_territory = no

@@ -4,21 +4,20 @@ Red Tide - An HOI4 Alternate History Mod (1.8.1) https://discord.gg/hby96rN
 
 
 Current Content:
--Leon Trotsky leads the Soviet Union
--Soviet Union Focus Tree (Will Be Expanded)
--United States Focus Tree (Will Be Expanded)
--Japanese Focus Tree (Will Be Expanded)
+-Leon Trotsky takes leadership when Stalin "disappears"
 -German Civil War
--Soviet Created Civil Wars in Iran, Afghanistan, and Cuba (More to Come)
+-Balkan Entente
+-Alliance of Free Nations
+-Socialist States of America
+-Fascist League
+-Hitler's Anti-Communist Speech
+-And much more!
 
 Planned Content:
-Complete Removal of things that conflict with the alternate scenario (World War Two will not happen as it did)
-Eventually the four major nations to play will be the Soviet Union, United States, and Japan, and Germany
-Soviet Union Focus Tree
-United States Focus Tree
-Japanese Focus Tree
-German Focus Tree
+-Much more, expanded focus trees, interactive events, stacic events, different choices, new gfx, and whatever people suggest to me
 
+Current Playable Nations:
+-All nations are playable, but not all countries have full content yet :)
 
 FAQ:
 
