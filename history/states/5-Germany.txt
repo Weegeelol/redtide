@@ -19,7 +19,7 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = GER
-                add_core_of = CGR
+		add_core_of = CGR
 	}
 
 	provinces={

@@ -1,6 +1,6 @@
-﻿capital = 51
+﻿capital = 692
 
-OOB = ""
+OOB = "CGR_1936"
 
 set_fuel_ratio = 0.8
 
