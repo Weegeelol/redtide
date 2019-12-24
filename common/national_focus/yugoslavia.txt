@@ -16,7 +16,7 @@ continuous_focus_position = { x = 50 y = 1600 }
 
 focus = {
 		id = YUG_foreign_policy
-		icon = gfx_goal_foreign_policy
+		icon = GFX_goal_foreign_policy
 		x = 10
 		y = 0
 		cost = 5
@@ -69,13 +69,15 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		add_opinion_modifier = { target = SOV modifier = medium_increase }
+		add_opinion_modifier = { target = GER modifier = medium_increase }
+		add_opinion_modifier = { target = ITA modifier = medium_increase }
 		}
 	}
 
 focus = {
 		id = YUG_yug_ideals
-		icon = GFX_goal_
+		icon = GFX_goal_yug_ideals
 		prerequisite = { focus = YUG_foreign_policy }
 		mutually_exclusive = { focus = YUG_foreign_policy focus = YUG_support_be }
 		x = 5
@@ -371,7 +373,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_communist_support
 		}
 	}
 focus = {
@@ -389,12 +391,12 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_fascist_support
 		}
 	}
 focus = {
 		id = YUG_approach_germany
-		icon = GFX_goal_german_flag
+		icon = GFX_goal_cgerman_flag
 		prerequisite = { focus =  YUG_support_communists }
 		mutually_exclusive = { focus = YUG_approach_soviets }
 		x = -1
@@ -407,7 +409,9 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+	add_opinion_modifier = { target = CGR modifier = medium_increase }
+add_political_power = 100
+add_war_support = 0.3
 		}
 	}
 focus = {
@@ -420,12 +424,13 @@ focus = {
 		relative_position_id = YUG_support_communists
 		cost = 10
 available = {
-
+SOV = {exists = yes}
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		add_opinion_modifier = { target = SOV modifier = medium_increase }
+		add_political_power = 100
 		}
 	}
 focus = {
@@ -442,7 +447,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_worker_party
 		}
 	}
 focus = {
@@ -454,12 +459,12 @@ focus = {
 		relative_position_id = YUG_establish_workers_party
 		cost = 10
 available = {
-
+SOV = { is_in_faction = yes }
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+SOV = { add_to_faction = YUG }
 		}
 	}
 focus = {
@@ -476,7 +481,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_trotsky
 		}
 	}
 focus = {
@@ -493,7 +498,17 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Josip Broz Tito"
+			desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
+			picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+				permanent_revolutionary
+			}
+		}
 		}
 	}
 focus = {
@@ -510,12 +525,14 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+add_war_support = 0.4
+add_manpower = 50000
 
 		}
 	}
 focus = {
 		id = YUG_support_germany
-		icon = GFX_goal_support_germany
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = YUG_intervene_civilwar }
 		x = 0
 		y = 1
@@ -527,7 +544,10 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		create_wargoal = {
+				type = annex_everything
+				target = GER
+		}
 		}
 	}
 focus = {
@@ -544,7 +564,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_world_revolution
 		}
 	}
 focus = {
@@ -556,12 +576,15 @@ focus = {
 		relative_position_id = YUG_spread_revolution
 		cost = 10
 available = {
-
+BUL = { exists = yes }
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		create_wargoal = {
+				type = annex_everything
+				target = BUL
+		}
 		}
 	}
 #################
@@ -581,7 +604,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_ideas = YUG_idea_alone
 		}
 	}
 focus = {
@@ -599,7 +622,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_opinion_modifier = { target = GER modifier = medium_increase }
 		}
 	}
 focus = {
@@ -617,7 +640,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_opinion_modifier = { target = ITA modifier = medium_increase }
 		}
 	}
 focus = {
@@ -630,12 +653,12 @@ focus = {
 		relative_position_id = YUG_go_german
 		cost = 10
 available = {
-
+SOV = {is_in_faction = yes}
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+GER = { add_to_faction = YUG }
 		}
 	}
 focus = {
@@ -652,7 +675,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_research_slot = 1
 		}
 	}
 focus = {
@@ -666,10 +689,11 @@ focus = {
 available = {
 
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
-
+ITA = {transfer_state = 107}
+ITA = {transfer_state = 108}
 		}
 	}
 focus = {
@@ -683,10 +707,10 @@ focus = {
 available = {
 
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
-
+ITA = {transfer_state = 106}
 		}
 	}
 focus = {
@@ -700,10 +724,10 @@ focus = {
 available = {
 
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
-
+ITA = {transfer_state = 45}
 		}
 	}
 focus = {
@@ -720,7 +744,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+ITA = { puppet = YUG }
 		}
 	}
 focus = {
@@ -754,7 +778,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_political_power = 200
 		}
 	}
 focus = {
@@ -771,7 +795,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_political_power = 100
 		}
 	}
 focus = {
@@ -788,7 +812,13 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+add_state_claim = 39
+add_state_claim = 160
+add_state_claim = 161
+add_state_claim = 2
+add_state_claim = 157
+add_state_claim = 117
+add_state_claim = 156
 		}
 	}
 focus = {
@@ -805,7 +835,10 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+		create_wargoal = {
+				type = annex_everything
+				target = ITA
+		}
 		}
 	}
 ######################
