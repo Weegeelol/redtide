@@ -1,0 +1,27 @@
+
+state={
+	id=789
+	name="STATE_789"
+
+	history={
+		owner = CGR
+		victory_points = {
+			3512 10 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+
+		}
+		add_core_of = GER
+		add_core_of = CGR
+
+	}
+
+	provinces={
+		3512 6469 6570 9482 
+	}
+	manpower=2791500
+	buildings_max_level_factor=1.000
+	state_category=city
+}
